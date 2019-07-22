@@ -1,18 +1,43 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
 .tab_container {
+    width: 100%;
     background-color: #F3F4F6;
+}
+
+.tab_list {
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .tab_list {
+        width: 50%;
+    }
+    .tab_panel {
+        width: 50%;
+    }
 }
 
 .tab {
     display: inline-block;
     border: none;
+    width: 33.33%;
     background-color: #F3F4F6;
-    padding: 10px 30px;
+    padding: 2.5% 0;
     margin-right: -4px;
     font-size: 14px;
 }
 
 .tab--inactive {
-    border: none;
+    border-top: 5px solid #F3F4F6;
     background-color: #F3F4F6;
 }
 
@@ -22,10 +47,7 @@
 }
 
 .tab_panel {
-    padding: 50px;
+    width: 100%;
+    padding: 5%;
     background-color: #fff;
-}
-
-.tab_panel__title {
-    margin-top: 0;
 }
