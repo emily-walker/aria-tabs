@@ -1,0 +1,20 @@
+body {
+    background-image: url('./tab-component.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+
+.tab {
+    display: inline-block;
+    border: none;
+    background-color: #F3F4F6;
+    padding: 10px 30px;
+    margin-right: -4px;
+    font-size: 14px;
+}
+
+.tab--active {
+    border-top: 5px solid #2A9799;
+    background-color: #fff;
+}
