@@ -1,3 +1,7 @@
+.tab_container {
+    background-color: #F3F4F6;
+}
+
 .tab {
     display: inline-block;
     border: none;
@@ -15,4 +19,13 @@
 .tab--active {
     border-top: 5px solid #2A9799;
     background-color: #fff;
+}
+
+.tab_panel {
+    padding: 50px;
+    background-color: #fff;
+}
+
+.tab_panel__title {
+    margin-top: 0;
 }
