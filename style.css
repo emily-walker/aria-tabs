@@ -1,10 +1,3 @@
-body {
-    background-image: url('./tab-component.jpg');
-    background-repeat: no-repeat;
-    background-size: auto;
-}
-
-
 .tab {
     display: inline-block;
     border: none;
