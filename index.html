@@ -9,6 +9,30 @@
 		<script src="tabs.js"></script>
 	</head>
 	<body>
-		<p>Some tabs here 🗂</p>
+		<div class="tab_container">
+			<div role="tablist" aria-label="tab_list">
+				<button role="tab" aria-selected="true" aria-controls="tab_panel--1" id="tab--1" tabindex="0">
+						Terminal 1
+					</button>
+				<button role="tab" aria-selected="false" aria-controls="tab_panel--2" id="tab--2" tabindex="-1">
+						Terminal 2
+					</button>
+				<button role="tab" aria-selected="false" aria-controls="tab_panel--3" id="tab--3" tabindex="-1">
+						Terminal 3
+				</button>
+			</div>
+			<div id="tab_panel--1" role="tabpanel" tabindex="0" aria-labelledby="tab--1">
+				<h1>Directions</h1>
+				<p>Some text</p>
+			</div>
+			<div id="tab_panel--2" role="tabpanel" tabindex="0" aria-labelledby="tab--2" hidden>
+				<h1>Directions</h1>
+				<p>Some text 2</p>
+			</div>
+			<div id="tab_panel--3" role="tabpanel" tabindex="0" aria-labelledby="tab--3" hidden>
+				<h1>Directions</h1>
+				<p>Some text 3</p>
+			</div>
+		  </div>
 	</body>
 </html>
